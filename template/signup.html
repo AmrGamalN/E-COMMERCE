@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/signup" method="POST">
+      <input type="text" name="fname" />
+      <input type="text" name="lname" placeholder="lname" />
+      <input type="date" name="age" placeholder="age" />
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        title="password"
+      />
+      <input
+        type="confirmpassword"
+        name="confirmpassword"
+        placeholder="confirmpassword"
+        title="confirmpassword"
+      />
+      <input type="email" name="email" placeholder="email" />
+      <input type="text" name="phone" placeholder="phone" />
+      <select name="gender" id="gender">
+        <option value="male" selected>male</option>
+        <option value="female">female</option>
+        <option value="not">nothing</option>
+      </select>
+      <input type="file" name="profilePhoto" />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
