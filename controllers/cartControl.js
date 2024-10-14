@@ -3,7 +3,7 @@ const productModel = require("../database/models/productModel");
 const MiddleWareError = require("../middleware/errorHandler");
 const { handleError, handleSuccess } = require("../handleCheck/checkError");
 const { validationResult } = require("express-validator");
-//amrooooooooooooooo comment new
+
 const valid = (req, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
